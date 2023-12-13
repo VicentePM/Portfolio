@@ -183,6 +183,7 @@ main div {
 .projects {
     display: flex;
     flex-wrap: nowrap;
+    flex-direction: row;
     justify-content: space-between;
 }
 
