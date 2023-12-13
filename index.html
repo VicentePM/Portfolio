@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -19,33 +19,31 @@
         </div>
     </header>
     <main>
-        <section class="sect-1">
+        <section class="sect-1" id="home">
             <div class="contenido">
                 <div class="texto">
-                    <p>Hola me llamo <span class="morado">Vicente, </span>indagando por este gran mundillo encontre mi
-                        pasion por el <span class="morado">Back-End</span></p>
+                    <p>Hola me llamo <span class="morado">Vicente, </span>indagando por este gran mundillo encontré mi
+                        pasión por el <span class="morado">Back-End</span></p>
                     <p>Bienvenidos a mi gran <span class="morado">MUNDO</span></p>
-                    <button><a href="https://www.google.es">¡Conecta conmigo!</a></button>
+                    <button><a href="#contact-me">¡Conecta conmigo!</a></button>
                 </div>
-                <div class="imagen">
-                </div>
+                <div class="imagen"></div>
             </div>
             <div class="citas">
                 <div class="cita">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula ante sit amet eros
-                        vestibulum, ac.</p>
+                    <p id="cita">La programación es el acto de escribir código, pero más que eso, es el acto de resolver problemas.</p>
                 </div>
                 <div class="autor">
-                    <p>Lorem Ipsum</p>
+                    <p id="autor">John Carmak</p>
                 </div>
             </div>
         </section>
-        <section class="sect-2">
+        <section class="sect-2" id="about-me">
             <div class="header-sect">
                 <p><span class="morado">#</span>About-me</p>
                 <hr>
-                <a href="https://www.google.es"><img src="./src/linkledin-flecha.png"
-                        alt="No se ha podido mostrar la imagen"></a>
+                <a href="https://www.linkedin.com/in/vicente-pedraza-montavez-8050a11b4/"><img
+                        src="./src/linkledin-flecha.png" alt="No se ha podido mostrar la imagen"></a>
             </div>
             <div class="about-me">
                 <div class="container-yo">
@@ -57,9 +55,7 @@
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tristique eget tortor at
                             fringilla.
-
                             In vitae sapien fermentum, eleifend velit et, aliquet est.
-
                             Vivamus nec velit iaculis, finibus risus a, dignissim dui. Curabitur faucibus vulputate
                             egestas.
                             Donec ultrices mi est. Aliquam
@@ -115,16 +111,64 @@
                 </div>
             </div>
         </section>
-        <section class="sect-3">
+        <section class="sect-3" id="projects">
             <div class="header-sect">
                 <p><span class="morado">#</span>Projects</p>
                 <hr>
-                <a href="https://www.google.es"><img src="./src/github-flecha.png"
+                <a href="https://github.com/VicentePM"><img src="./src/github-flecha.png"
                         alt="No se ha podido mostrar la imagen"></a>
             </div>
-
+            <div class="projects">
+                <div class="project">
+                    <img src="./src/img-calc-puzzle.jpg" alt="La imagen no se ha podido cargar">
+                    <div class="text-project">
+                        <h3 class="titulo-proyecto morado">Calculadora y Puzzle</h3>
+                        <h4 class="descripcion-proyecto">Calculadora y un sliding puzzle hecho para Ios con <span
+                                class="morado">SwiftUI</span> y <span class="morado">Storyboard</span></h4>
+                        <a href="" class="morado enlace-proyecto">Ver mas</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="./src/img-hogwarts.jpg" alt="La imagen no se ha podido cargar">
+                    <div class="text-project">
+                        <h3 class="titulo-proyecto morado">Hogwarts App</h3>
+                        <h4 class="descripcion-proyecto">Recoleccion de datos de una api de Harry Potter e implantacion
+                            en interfaz de <span class="morado">Android</span> con <span class="morado">Kotlin</span>
+                        </h4>
+                        <a href="" class="morado enlace-proyecto">Ver mas</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="./src/img-api.jpg" alt="La imagen no se ha podido cargar">
+                    <div class="text-project">
+                        <h3 class="titulo-proyecto morado">Api Ciudades</h3>
+                        <h4 class="descripcion-proyecto">Creacion de una api basica con <span class="morado">Spring
+                                Boot</span></h4>
+                        <a href="" class="morado enlace-proyecto">Ver mas</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sect-4" id="contact-me">
+            <div class="header-sect">
+                <p><span class="morado">#</span>Contact-me</p>
+                <hr>
+            </div>
+            <h2>¿Que problema tienes?</h2>
+            <div class="contacto">
+                <form method="post" class="cta-form" id="cta-form">
+                    <input type="text" name="nombre" id="form-nombre" placeholder="Nombre" autocomplete="off">
+                    <input type="text" name="email" id="form-email" placeholder="Email" autocomplete="off">
+                    <textarea name="mensaje" id="form-mensaje" placeholder="Mensaje"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
         </section>
     </main>
+    <footer>
+        <h4>Vicente Pedraza &#169</h2>
+    </footer>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

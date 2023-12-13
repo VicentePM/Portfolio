@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -24,11 +24,17 @@ hr {
 
 button {
     background-color: #282C33;
-    border: 3px #C778DD solid;
-    padding: 15px;
+    border: 3px #8a2be2 solid;
+    padding: 15px 30px;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #8a2be2;
+    cursor: pointer;
 }
 
 a {
@@ -39,14 +45,13 @@ a {
 .header-sect {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
 }
 
 .header-sect hr {
     width: 80%;
-    height: 3px;
+    flex: 0.98;
 }
 
 /* Header Style */
@@ -85,31 +90,38 @@ header img {
 
 /* MAIN */
 
-main div{
+main div {
     margin: 2% 3%;
 }
 
 /* Sect-1 Style */
 
-.sect-1 .contenido{
+.sect-1 .contenido {
     display: flex;
     justify-content: space-between;
     margin: auto;
 }
 
 .texto {
-    width: 50%; /* Ajusta el ancho según tus necesidades */
+    width: 50%;
 }
 
-
-.sect-1 .texto p, button{
+.sect-1 .texto p,
+.button {
     margin-top: 4%;
+}
+
+.texto button {
+    margin-top: 5%;
 }
 
 .imagen {
     margin: 2% 0;
-    width: 50%; /* Ajusta el ancho según tus necesidades */
-    background-image: url("../src/img-sect-1.png");
+    width: 50%;
+    background-image: url("../src/img-sect-1-p.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.3;
     height: 50vh;
 }
 
@@ -120,10 +132,13 @@ main div{
     align-items: center;
     justify-content: center;
     width: fit-content;
+    max-width: 80%;
     margin: 0 auto;
+    overflow: auto;
 }
 
-.cita {
+.cita,
+.autor {
     border: 3px solid #C778DD;
     padding: 2%;
     text-align: center;
@@ -131,16 +146,12 @@ main div{
 }
 
 .autor {
-    border: 3px solid #C778DD;
     border-top: 0;
-    padding: 2%;
-    margin: 0;
     align-self: flex-end;
     width: 30%;
-    text-align: center;
 }
 
-/* Sect-1 Style */
+/* Sect-2 Style */
 
 .about-me {
     display: flex;
@@ -149,18 +160,14 @@ main div{
     align-items: first baseline;
 }
 
-.container-yo {
-    width: 50%;
-}
-
+.container-yo,
 .container-skills {
     width: 50%;
 }
 
 .skills {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: row;
 }
 
 .header-skill {
@@ -169,4 +176,107 @@ main div{
 
 .skill p {
     margin-top: 30%;
+}
+
+/* Sect-3 Style */
+
+.projects {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    background-color: #363636;
+    height: auto;
+    min-height: 45vh;
+}
+
+.project img {
+    max-height: 30vh;
+}
+
+.text-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.enlace-proyecto {
+    align-self: flex-end;
+}
+
+/* Sect-4 Style */
+
+.contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.cta-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 3px solid #8a2be2;
+    height: 100%;
+    flex: .5;
+}
+
+input,
+textarea {
+    width: 100%;
+    background-color: #282C33;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: whitesmoke;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+input {
+    flex: 0.1;
+    border-bottom: 3px solid #8a2be2;
+}
+
+textarea {
+    flex: 0.9;
+    resize: none;
+    border: 0;
+}
+
+.cta-form button {
+    width: 100%;
+    border: 0;
+    border-top: 3px solid #8a2be2;
+}
+
+.sect-4 h2 {
+    text-align: center;
+    padding: 2%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0px -15px 10px -15px #111;
+    height: 10vh;
+    margin-top: 2%;
 }
